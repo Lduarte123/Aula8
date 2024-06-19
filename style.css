@@ -1,0 +1,49 @@
+*{  margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+/*div, body, html{
+    height: 100%;
+}*/
+.course-list{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*Em justify contend space da espaçamentos para os itens da lista*/
+/*flex direction dá a direção dos itens*/
+/*flex-wrap: wrap faz com que os itens fiquem responsivos*/
+.course-item{
+    padding: 10px;
+    font-size: 22px;
+    background-color: rgb(246, 246, 246);
+    color: rgb(0, 0, 0); 
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    border-top: 6px solid gray;
+    box-shadow: 2px 4px 5px 0 rgb(175, 175, 175);
+    transition: 0.3s ease-in-out;
+    background-image:url(https://geracaotech.iel-ce.org.br/images/logo-geracao-tech.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size:contain;
+    
+}
+.course-item:hover{
+    transform: translatey(-10px);
+}
+.course-item:first-child{
+    border-top: 6px solid green; 
+}
+.course-item:first-child:hover{
+    border-top-color: rgb(21, 8, 8) ;
+}
